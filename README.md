@@ -1,40 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Countries Explorer  
 
-## Getting Started
+A web application to explore country data using React, Next.js, and a custom RESTful API. This project leverages React-Bootstrap for a responsive design and SWR for efficient data fetching.  
 
-First, run the development server:
+## Features  
+- Browse country data with dynamic routing.  
+- View detailed information about each country, including native names, population, and region.  
+- Pre-rendered "About" page with developer information and a highlighted country.  
+- Responsive UI built with React-Bootstrap.  
+- SWR-powered data fetching for seamless updates.  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Technologies Used  
+- **Frontend:** React, Next.js, SWR, React-Bootstrap, Bootstrap 5.  
+- **Backend:** Custom RESTful API built with Node.js and Express.  
+- **Deployment:** Vercel.  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Setup Instructions  
+1. Clone the repository:  
+   ```bash  
+   git clone https://github.com/Ashwin-BN/countries-explorer.git  
+   cd countries-explorer  
+   ```  
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+2. Install dependencies:  
+   ```bash  
+   npm install  
+   ```  
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+3. Start the development server:  
+   ```bash  
+   npm run dev  
+   ```  
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+4. Open the application in your browser at `http://localhost:3000`.  
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Usage  
+### Navigation  
+- Use the top navigation bar to access:  
+  - **Countries:** Home page displaying a list of countries.  
+  - **About:** Developer information with details of a selected country.  
 
-## Learn More
+### API Integration  
+- The app fetches data from the `/api/countries` endpoint, with support for pagination and specific country lookups.  
 
-To learn more about Next.js, take a look at the following resources:
+### Detailed Country View  
+- Access a country's detailed information by navigating to `/country/[id]`.  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Components Overview  
+- **`MainNav.js`**: Responsive navigation bar featuring "Countries" and "About" links.  
+- **`Layout.js`**: Application layout wrapper with a consistent design.  
+- **`PageHeader.js`**: Reusable component for page headings.  
+- **`CountryDetails.js`**: Displays detailed information for a selected country.  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Future Enhancements  
+- Add search functionality for filtering countries by name, region, or population.  
+- Include graphs or charts for a visual representation of country statistics.  
+- Improve accessibility features for a more inclusive user experience.  
 
-## Deploy on Vercel
+## License  
+This project is licensed under the [MIT License](LICENSE).  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feel free to customize this README to include specific links, a description of your API endpoints, or screenshots of your application.
