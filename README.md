@@ -37,7 +37,7 @@ A web application to explore country data using React, Next.js, and a custom RES
 ### Navigation  
 - Use the top navigation bar to access:  
   - **Countries:** Home page displaying a list of countries.  
-  - **About:** Developer information with details of a selected country.  
+  - **About:** Developer information with details of my homeland.  
 
 ### API Integration  
 - The app fetches data from the `/api/countries` endpoint, with support for pagination and specific country lookups.  
@@ -58,7 +58,3 @@ A web application to explore country data using React, Next.js, and a custom RES
 
 ## License  
 This project is licensed under the [MIT License](LICENSE).  
-
----
-
-Feel free to customize this README to include specific links, a description of your API endpoints, or screenshots of your application.
